@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PropertyRentalManagementWebSite_V2.Apartment>
+@{
+    ViewBag.Title = "Properties";
+}
+
+        <div class="listing_page_container">
+            <h2>LISTINGS</h2>
+            <hr />
+            <div class="row" style="display:flex; flex-wrap: wrap;">
+               
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/Images/@Html.DisplayFor(modelItem => item.Image)" class="img-thumbnail" alt="@Html.DisplayFor(itemModel => item.Image)">
+                            <div class="card-body">
+                                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Building.Name)</h5>
+                                <p class="card-text">
+                                    @Html.DisplayNameFor(model => model.Price):
+                                    @Html.DisplayFor(modelItem => item.Price),  @Html.DisplayNameFor(model => model.Bedrooms) :  @Html.DisplayFor(modelItem => item.Bedrooms)
+                                    , @Html.DisplayNameFor(model => model.Bathrooms):  @Html.DisplayFor(modelItem => item.Bathrooms)
+                                    , @Html.DisplayFor(modelItem => item.Description).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    

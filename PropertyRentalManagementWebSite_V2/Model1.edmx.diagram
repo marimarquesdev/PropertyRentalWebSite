@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f7762a1419c84a368a54473562f73152" Name="Diagram1">
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Apartment" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Appointment" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Building" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Employee" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Message" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Schedule" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyRentalManagementDBModel.Tenant" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="PropertyRentalManagementDBModel.FK_Apartments_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyRentalManagementDBModel.FK_Apartments_Tenants" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyRentalManagementDBModel.FK_Appointments_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyRentalManagementDBModel.FK_Appointments_Schedules" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

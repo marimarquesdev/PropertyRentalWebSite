@@ -1,0 +1,99 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url('../Images/slide1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+#search {
+    background-color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+}
+
+.input-group {
+    display: inline-flex;
+}
+
+.container > p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.5);
+    border-color: #080808;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+        color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+            color: #ff5733;
+}
+
+.navbar-inverse .opaque {
+        background-color: #0f0a3c;
+        height: 60px;
+        transition: background-color .5s ease 0s;
+    }
+
+
+
+.listing_page_container {
+    background: #fff none repeat scroll 0 0;
+    padding: 40px;
+}
+
+.main {
+    margin-bottom: 80px;
+    min-height: 400px;
+    padding-top: 60px;
+}
+
+div {
+    display: block;
+}
